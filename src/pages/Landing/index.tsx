@@ -1,7 +1,26 @@
-import { FC } from 'react';
+import {
+  ClientsCarousal,
+  RightImagedHero,
+  LeftImagedHero,
+  FinalHero,
+  QualityHero,
+  QuiltedImagesHero,
+  StatsHero,
+  TestimonialsHero,
+} from '../../components/Heros';
+import AppLayout from '../../wrappers/Layout';
 
-const Landing: FC = () => (
-  <div>Landing</div>
-);
-
-export default Landing;
+export default function Landing() {
+  return (
+    <AppLayout>
+      <RightImagedHero />
+      <ClientsCarousal />
+      <LeftImagedHero />
+      <QualityHero />
+      <StatsHero />
+      <QuiltedImagesHero />
+      <TestimonialsHero />
+      <FinalHero />
+    </AppLayout>
+  );
+}
